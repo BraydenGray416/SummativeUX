@@ -80,6 +80,62 @@ body {
   font-family: 'Permanent Marker', cursive;
   color: white; }
 
+.col {
+  min-height: 49px;
+  float: left;
+  padding-top: 12px;
+  padding-bottom: 12px; }
+
+h1 {
+  font-size: 24px; }
+
+.welcomeLogo {
+  display: flex;
+  justify-content: space-between; }
+
+.title {
+  margin-left: 10px; }
+
+.loyalty .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px; }
+  .loyalty .row .cupBought {
+    flex: 1;
+    text-align: center;
+    color: #ffffff; }
+  .loyalty .row .cupNotBought {
+    flex: 1;
+    text-align: center;
+    color: #9C9797; }
+  .loyalty .row .fa-glass-whiskey {
+    font-size: 3em;
+    transform: scale(1, 1.5); }
+  .loyalty .row .cupFree {
+    display: flex;
+    position: relative;
+    flex: 1;
+    text-align: center; }
+  .loyalty .row .cupImage {
+    display: flex;
+    position: absolute;
+    color: #9C9797;
+    z-index: 5;
+    flex: 1;
+    text-align: center;
+    margin-left: 10px;
+    top: 0;
+    left: 0; }
+  .loyalty .row .free {
+    z-index: 10;
+    flex: 1;
+    text-align: center;
+    top: 0;
+    left: 0; }
+.loyalty h5 {
+  text-align: center; }
+
 .menuContainer {
   text-align: center; }
   .menuContainer .menuList {
@@ -104,5 +160,46 @@ body {
       color: #C91006; }
     .menuContainer .menuList .item5 {
       color: #2BC2BA; }
+
+.placeOrder {
+  border: 1px solid #ffffff;
+  width: 275px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  border-radius: 15px; }
+  .placeOrder h2 {
+    font-size: 30px; }
+
+.progressSection {
+  position: fixed; }
+
+.pageTitle {
+  background-color: #404040;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  height: 50px; }
+  .pageTitle h1 {
+    padding-left: 10px; }
+
+.pageTabs .col3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000; }
+  .pageTabs .col3 h3 {
+    font-size: 16px; }
+  .pageTabs .col3 h4 {
+    font-size: 12px; }
+.pageTabs .active {
+  background-color: #352647;
+  color: #ffffff; }
+
+.pageTabs:after {
+  clear: both;
+  display: block;
+  content: ''; }
 
 /*# sourceMappingURL=style.css.map */
