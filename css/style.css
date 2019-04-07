@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.col1 {
+  width: 8.3333333333%; }
+
+.col2 {
+  width: 16.6666666667%; }
+
+.col3 {
+  width: 25%; }
+
+.col4 {
+  width: 33.3333333333%; }
+
+.col5 {
+  width: 41.6666666667%; }
+
+.col6 {
+  width: 50%; }
+
+.col7 {
+  width: 58.3333333333%; }
+
+.col8 {
+  width: 66.6666666667%; }
+
+.col9 {
+  width: 75%; }
+
+.col10 {
+  width: 83.3333333333%; }
+
+.col11 {
+  width: 91.6666666667%; }
+
+.col12 {
+  width: 100%; }
+
+.offset1 {
+  margin-left: 8.3333333333%; }
+
+.offset2 {
+  margin-left: 16.6666666667%; }
+
+.offset3 {
+  margin-left: 25%; }
+
+.offset4 {
+  margin-left: 33.3333333333%; }
+
+.offset5 {
+  margin-left: 41.6666666667%; }
+
+.offset6 {
+  margin-left: 50%; }
+
+.offset7 {
+  margin-left: 58.3333333333%; }
+
+.offset8 {
+  margin-left: 66.6666666667%; }
+
+.offset9 {
+  margin-left: 75%; }
+
+.offset10 {
+  margin-left: 83.3333333333%; }
+
+.offset11 {
+  margin-left: 91.6666666667%; }
+
+.offset12 {
+  margin-left: 100%; }
+
+body {
+  background-color: black;
+  font-family: 'Permanent Marker', cursive;
+  color: white; }
+
+.menuContainer {
+  text-align: center; }
+  .menuContainer .menuList {
+    list-style: none;
+    line-height: normal; }
+    .menuContainer .menuList .menuItemTitle {
+      font-size: 14px;
+      padding-top: 10px; }
+    .menuContainer .menuList .menuTitle {
+      color: #FFFD80;
+      font-size: 16px; }
+    .menuContainer .menuList .menuItem {
+      font-size: 12px;
+      line-height: 90%; }
+    .menuContainer .menuList .item1 {
+      color: #5ECC60; }
+    .menuContainer .menuList .item2 {
+      color: #DB3B99; }
+    .menuContainer .menuList .item3 {
+      color: #DEC13E; }
+    .menuContainer .menuList .item4 {
+      color: #C91006; }
+    .menuContainer .menuList .item5 {
+      color: #2BC2BA; }
+
+/*# sourceMappingURL=style.css.map */

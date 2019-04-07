@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+@import 'variables';
+
+body{
+ background-color: black;
+ font-family: 'Permanent Marker', cursive;
+ color: $mainColour;
+}
+
+.menuContainer{
+  text-align: center;
+  .menuList{
+    list-style: none;
+    line-height: normal;
+    .menuItemTitle{
+      font-size: 14px;
+      padding-top: 10px;
+    }
+    .menuTitle{
+      color: #FFFD80;
+      font-size: 16px;
+    }
+    .menuItem{
+      font-size: 12px;
+      line-height: 90%;
+    }
+    .item1{
+      color: #5ECC60;
+    }
+    .item2{
+      color: #DB3B99;
+    }
+    .item3{
+      color: #DEC13E;
+    }
+    .item4{
+      color: #C91006;
+    }
+    .item5{
+      color: #2BC2BA;
+    }
+  }
+}

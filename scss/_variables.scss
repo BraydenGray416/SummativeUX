@@ -1,0 +1,28 @@
+$mainColour: white;
+$maxWidth: 1000;
+
+$columns: 12;
+$columnWidth: 100% / $columns;
+
+@for $i from 1 through $columns{
+  .col#{$i}{
+    width: $columnWidth * $i;
+
+  }
+}
+
+$offset: 12;
+$offsetMargin: 100% / $offset;
+
+@for $i from 1 through $offset{
+  .offset#{$i}{
+    margin-left: $offsetMargin * $i;
+
+  }
+}
+
+@mixin colourLayout{
+  color: red;
+  background-color: blue;
+  border: 10px solid green;
+}
