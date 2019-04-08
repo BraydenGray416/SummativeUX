@@ -1,8 +1,16 @@
 $mainColour: white;
-$maxWidth: 1000;
 
 $columns: 12;
 $columnWidth: 100% / $columns;
+
+$item1: #5ECC60;
+$item2: #DB3B99;
+$item3: #DEC13E;
+$item4: #C91006;
+$item5: #2BC2BA;
+
+$contentBgColor: #363636;
+$mainGreenColor: #3B7A26;
 
 @for $i from 1 through $columns{
   .col#{$i}{
@@ -21,8 +29,8 @@ $offsetMargin: 100% / $offset;
   }
 }
 
-@mixin colourLayout{
-  color: red;
-  background-color: blue;
-  border: 10px solid green;
+@mixin flexCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
