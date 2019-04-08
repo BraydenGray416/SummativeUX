@@ -131,6 +131,7 @@ h1{
 
 .progressSection{
   position: fixed;
+  width: 100%;
 }
 
 .pageTitle{
@@ -174,5 +175,96 @@ h1{
 }
 
 .progressBar{
+  width: 100%;
+  height: 10px;
+  background-color: #ffffff;
+}
 
+.bar{
+  background-color: #3B7A26;
+  width: 25%;
+  height: 10px;
+}
+
+.orderingContent{
+  padding-top: 110px;
+  display: none;
+}
+
+.confirmOrderContent{
+  padding-top: 110px;
+  display: none;
+}
+
+.paymentContent{
+  padding-top: 110px;
+  display: none;
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .inStore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #363636;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    height: 80px;
+    width: 320px;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .payNow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #363636;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    height: 80px;
+    width: 320px;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+
+.timeContent{
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  padding-top: 110px;
+  display: none;
+  .readyTime{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #363636;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    height: 80px;
+    width: 320px;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+}
+
+
+.totalBar{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  background-color: #737373;
+  padding-left: 10px;
+  padding-right: 10px;
+  h2{
+    font-size: 24px;
+  }
 }
