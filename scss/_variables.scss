@@ -35,3 +35,9 @@ $offsetMargin: 100% / $offset;
   align-items: center;
   justify-content: center;
 }
+
+@mixin flexRow{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

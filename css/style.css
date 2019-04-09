@@ -214,15 +214,15 @@ a {
   height: 10px;
   background-color: white; }
 
-.bar {
+#bar {
   background-color: #3B7A26;
   width: 25%;
-  height: 10px; }
+  height: 10px;
+  transition: 0.5s; }
 
 .orderingContent {
   margin: 0 auto;
   padding-top: 110px;
-  display: none;
   width: 90%; }
   .orderingContent .box {
     display: flex;
@@ -267,7 +267,9 @@ a {
   .orderingContent .item5 {
     color: #2BC2BA; }
   .orderingContent .confirmBtn {
-    float: right;
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
     border: 0;
     background-color: #3B7A26;
     color: white;
@@ -341,7 +343,8 @@ a {
       padding-right: 5px;
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      left: 20px; }
     .confirmOrderContent .mainContainer .confirmBtn {
       position: absolute;
       bottom: 60px;
@@ -357,7 +360,10 @@ a {
       margin-top: 10px; }
 
 .paymentContent {
-  padding-top: 110px; }
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 110px;
+  display: none; }
   .paymentContent .row {
     display: flex;
     flex-wrap: wrap;
@@ -384,6 +390,27 @@ a {
     width: 320px;
     margin-top: 20px;
     font-size: 24px; }
+  .paymentContent .creditCardPayment {
+    display: none;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #363636;
+    font-size: 14px; }
+    .paymentContent .creditCardPayment .cardDetails input {
+      width: 100%; }
+    .paymentContent .creditCardPayment .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .paymentContent .creditCardPayment .submitBtn {
+      border: 0;
+      background-color: #3B7A26;
+      color: white;
+      font-size: 14px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-radius: 10px;
+      margin-top: 10px; }
   .paymentContent .previousBtn {
     position: absolute;
     bottom: 60px;
@@ -431,5 +458,31 @@ a {
   padding-right: 10px; }
   .totalBar h2 {
     font-size: 24px; }
+
+@media screen and (min-width: 1000px) {
+  .orderingContent .box {
+    font-size: 20px; }
+    .orderingContent .box .smallBtn {
+      font-size: 18px; }
+    .orderingContent .box .largeBtn {
+      font-size: 18px; }
+
+  .confirmOrderContent .mainContainer .box {
+    font-size: 20px; }
+    .confirmOrderContent .mainContainer .box .smallBtn {
+      font-size: 18px; }
+    .confirmOrderContent .mainContainer .box .largeBtn {
+      font-size: 18px; }
+
+  .paymentContent .creditCardPayment {
+    margin: 10px auto;
+    width: 70%;
+    font-size: 20px; }
+    .paymentContent .creditCardPayment form .cardDetails input {
+      font-size: 20px; }
+    .paymentContent .creditCardPayment form .row .card input {
+      font-size: 20px; }
+    .paymentContent .creditCardPayment .submitBtn {
+      font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

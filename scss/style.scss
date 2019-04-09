@@ -36,9 +36,7 @@ h1{
 .loyalty{
 
   .row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include flexRow;
     margin: 20px;
     .cupBought{
       flex: 1;
@@ -185,16 +183,17 @@ a{
   background-color: $mainColour;
 }
 
-.bar{
+#bar{
   background-color: $mainGreenColor;
   width: 25%;
   height: 10px;
+  transition: 0.5s
 }
 
 .orderingContent{
   margin: 0 auto;
   padding-top: 110px;
-  display: none;
+  // display: none;
   width: 90%;
   .box{
 
@@ -247,7 +246,9 @@ a{
     color: $item5
   }
   .confirmBtn{
-    float: right;
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
     border: 0;
     background-color: $mainGreenColor;
     color: $mainColour;
@@ -331,6 +332,7 @@ a{
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
       margin-top: 10px;
+      left: 20px;
     }
     .confirmBtn{
       position: absolute;
@@ -351,12 +353,12 @@ a{
 }
 
 .paymentContent{
+  width: 90%;
+  margin: 0 auto;
   padding-top: 110px;
-  // display: none;
+  display: none;
   .row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include flexRow;
   }
   .inStore{
     @include flexCenter;
@@ -378,6 +380,33 @@ a{
     margin-top: 20px;
     font-size: 24px;
   }
+  .creditCardPayment{
+    display: none;
+    .cardDetails{
+      input{
+        width: 100%;
+      }
+    }
+    .row{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    padding:5px;
+    margin-top: 10px;
+    background-color: $contentBgColor;
+    font-size: 14px;
+    .submitBtn{
+      border: 0;
+      background-color: $mainGreenColor;
+      color: $mainColour;
+      font-size: 14px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  }
 
   .previousBtn{
     position: absolute;
@@ -398,9 +427,7 @@ a{
 
 .timeContent{
   .row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include flexRow;
   }
   padding-top: 110px;
   display: none;
@@ -433,6 +460,55 @@ a{
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
+  .orderingContent{
+    .box{
+      font-size: 20px;
+      .smallBtn{
+        font-size: 18px;
+      }
+      .largeBtn{
+        font-size: 18px;
+      }
+    }
+  }
 
+  .confirmOrderContent{
+    .mainContainer{
+      .box{
+        font-size: 20px;
+        .smallBtn{
+          font-size: 18px;
+        }
+        .largeBtn{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .paymentContent{
+    .creditCardPayment{
+      margin: 10px auto;
+      width: 70%;
+      font-size: 20px;
+      form{
+        .cardDetails{
+          input{
+            font-size: 20px;
+          }
+        }
+        .row{
+          .card{
+            input{
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .submitBtn{
+        font-size: 20px;
+      }
+    }
+  }
 }

@@ -14,26 +14,26 @@
         <i class="fas fa-chevron-left"></i><h1>Milkshakes</h1>
       </div>
       <div class="pageTabs">
-        <div class="col col3 active">
+        <div id="orderingTab" class="col col3 active">
           <h3>Ordering</h3>
         </div>
-        <div class="col col3">
+        <div id="confirmTab" class="col col3">
           <h4>Confirm Order</h4>
         </div>
-        <div class="col col3">
+        <div id="paymentTab" class="col col3">
           <h3>Payment</h3>
         </div>
-        <div class="col col3">
+        <div id="timeTab" class="col col3">
         <h3>Time</h3>
         </div>
 
       </div>
       <div class="progressBar">
-        <div class="bar"></div>
+        <div id="bar"></div>
       </div>
     </div>
 
-    <div class="orderingContent">
+    <div id="orderingContent" class="orderingContent">
       <div class="box item1">
         <p>"What are you doing in my swamp?"</p>
         <div class="btns">
@@ -69,13 +69,13 @@
           <button class="largeBtn" type="button" name="button">Large</button>
         </div>
       </div>
-      <button class="confirmBtn">
+      <button id="confirmBtnOrdering" class="confirmBtn">
         Confirm
       </button>
     </div>
 
 
-    <div class="confirmOrderContent">
+    <div id="confirmOrderContent" class="confirmOrderContent">
       <div class="mainContainer">
         <div class="box item1">
           <p>"What are you doing in my swamp?"</p>
@@ -105,10 +105,10 @@
             <button class="largeBtn" type="button" name="button">X</button>
           </div>
         </div>
-        <button class="previousBtn">
+        <button id="previousBtnConfirm" class="previousBtn">
           Previous
         </button>
-        <button class="confirmBtn">
+        <button id="confirmBtnConfirm" class="confirmBtn">
           Confirm
         </button>
 
@@ -117,23 +117,50 @@
     </div>
 
 
-    <div class="paymentContent">
+    <div id="paymentContent" class="paymentContent">
       <div class="row">
-        <div class="inStore">Pay in store</div>
+        <div id="payInStore" class="inStore">Pay in store</div>
       </div>
       <div class="row">
-        <div class="payNow">Pay now</div>
+        <div id="payNow" class="payNow">Pay now</div>
       </div>
-      <div class="crediCardPayment">
-        <form class="" action="index.html" method="post">
+      <div id="cardPayment" class="creditCardPayment">
+        <form class="creditCardForm" action="#">
+          <div class="cardDetails">
+            Name on Card <br>
+            <input type="text" placeholder="John Steven Smith">
+          </div>
+          <div class="cardDetails">
+            Credit Card Number <br>
+            <input type="text" placeholder="1111-2222-3333-4444">
+          </div>
+          <div class="cardDetails">
+            Exp Month <br>
+            <input type="text" placeholder="September">
+          </div>
+          <div class="row">
+            <div class="card">
+              Exp year <br>
+              <input type="text" placeholder="2020">
+            </div>
+            <div class="card">
+              CVV <br>
+              <input type="text" placeholder="352">
+            </div>
+          </div>
 
         </form>
+        <button id="submitBtnCard" class="submitBtn">
+          Submit
+        </button>
       </div>
-      <button class="previousBtn">
+      <button id="previousBtnPayment" class="previousBtn">
         Previous
       </button>
     </div>
-    <div class="timeContent">
+
+
+    <div id="timeContent" class="timeContent">
       <h2 class="row">Thank you for ordering!</h2>
       <h3 class="row">Your order will be ready at:</h3>
       <div class="row">
@@ -146,5 +173,10 @@
       <h2>Items: 4</h2>
       <h2>$30.00</h2>
     </div>
+
+
+
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
