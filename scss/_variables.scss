@@ -11,6 +11,7 @@ $item5: #2BC2BA;
 
 $contentBgColor: #363636;
 $mainGreenColor: #3B7A26;
+$mainRedColor: #A62323;
 
 @for $i from 1 through $columns{
   .col#{$i}{

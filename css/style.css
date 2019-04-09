@@ -279,11 +279,85 @@ a {
     margin-top: 10px; }
 
 .confirmOrderContent {
-  padding-top: 110px; }
-
-.paymentContent {
   padding-top: 110px;
   display: none; }
+  .confirmOrderContent .mainContainer {
+    margin: 0 auto;
+    width: 90%; }
+    .confirmOrderContent .mainContainer .box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px;
+      margin-top: 10px;
+      height: 80px;
+      background-color: #363636;
+      font-size: 14px; }
+      .confirmOrderContent .mainContainer .box .btns {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .confirmOrderContent .mainContainer .box .smallBtn {
+        margin-left: 5px;
+        padding: 5px 2px 5px 2px;
+        border: 1px solid white;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: #363636;
+        font-size: 12px;
+        color: white; }
+      .confirmOrderContent .mainContainer .box .largeBtn {
+        width: 25px;
+        display: block;
+        padding: 5px 2px 5px 2px;
+        border-right: 1px solid white;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-left: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: #363636;
+        font-size: 12px;
+        color: white; }
+    .confirmOrderContent .mainContainer .item1 {
+      color: #5ECC60; }
+    .confirmOrderContent .mainContainer .item2 {
+      color: #DB3B99; }
+    .confirmOrderContent .mainContainer .item3 {
+      color: #DEC13E; }
+    .confirmOrderContent .mainContainer .item4 {
+      color: #C91006; }
+    .confirmOrderContent .mainContainer .item5 {
+      color: #2BC2BA; }
+    .confirmOrderContent .mainContainer .previousBtn {
+      position: absolute;
+      bottom: 60px;
+      float: left;
+      border: 0;
+      background-color: #A62323;
+      color: white;
+      font-size: 24px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      margin-top: 10px; }
+    .confirmOrderContent .mainContainer .confirmBtn {
+      position: absolute;
+      bottom: 60px;
+      right: 20px;
+      border: 0;
+      background-color: #3B7A26;
+      color: white;
+      font-size: 24px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      margin-top: 10px; }
+
+.paymentContent {
+  padding-top: 110px; }
   .paymentContent .row {
     display: flex;
     flex-wrap: wrap;
@@ -310,6 +384,20 @@ a {
     width: 320px;
     margin-top: 20px;
     font-size: 24px; }
+  .paymentContent .previousBtn {
+    position: absolute;
+    bottom: 60px;
+    float: left;
+    border: 0;
+    background-color: #A62323;
+    color: white;
+    font-size: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 10px;
+    left: 20px; }
 
 .timeContent {
   padding-top: 110px;
