@@ -63,18 +63,14 @@ h1{
         position: absolute;
         color: #9C9797;
         z-index: 5;
-        flex: 1;
-        text-align: center;
-        margin-left: 10px;
-        top: 0;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
       }
       .free{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 10;
-        flex: 1;
-        text-align: center;
-        top: 0;
-        left: 0;
       }
   }
   h5{
@@ -88,7 +84,7 @@ h1{
     list-style: none;
     line-height: normal;
     .menuItemTitle{
-      font-size: 14px;
+      font-size: 1.25em;
       padding-top: 10px;
     }
     .menuTitle{
@@ -96,7 +92,7 @@ h1{
       font-size: 16px;
     }
     .menuItem{
-      font-size: 12px;
+      font-size: 0.75em;
       line-height: 90%;
     }
     .item1{
@@ -125,7 +121,7 @@ a{
 .placeOrder{
   border: 1px solid $mainColour;
   width: 275px;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 12px auto;
   text-align: center;
   h2{
     font-size: 30px;
@@ -150,6 +146,7 @@ a{
 }
 
 .pageTabs{
+  display: flex;
   .col3{
     @include flexCenter;
     background-color: $mainColour;
@@ -168,7 +165,6 @@ a{
     color: $mainColour;
   }
 }
-
 
 
 .pageTabs:after {
@@ -231,22 +227,23 @@ a{
     }
   }
   .item1{
-    color: $item1
+    color: $item1;
   }
   .item2{
-    color: $item2
+    color: $item2;
   }
   .item3{
-    color: $item3
+    color: $item3;
   }
   .item4{
-    color: $item4
+    color: $item4;
   }
   .item5{
-    color: $item5
+    color: $item5;
+    margin-bottom: 108px;
   }
   .confirmBtn{
-    position: absolute;
+    position: fixed;
     bottom: 60px;
     right: 20px;
     border: 0;
@@ -305,22 +302,23 @@ a{
       }
     }
     .item1{
-      color: $item1
+      color: $item1;
     }
     .item2{
-      color: $item2
+      color: $item2;
     }
     .item3{
-      color: $item3
+      color: $item3;
     }
     .item4{
-      color: $item4
+      color: $item4;
     }
     .item5{
-      color: $item5
+      color: $item5;
+      margin-bottom: 108px;
     }
     .previousBtn{
-      position: absolute;
+      position: fixed;
       bottom: 60px;
       float: left;
       border: 0;
@@ -335,7 +333,7 @@ a{
       left: 20px;
     }
     .confirmBtn{
-      position: absolute;
+      position: fixed;
       bottom: 60px;
       right: 20px;
       border: 0;
@@ -409,7 +407,7 @@ a{
   }
 
   .previousBtn{
-    position: absolute;
+    position: fixed;
     bottom: 60px;
     float: left;
     border: 0;
@@ -461,6 +459,22 @@ a{
 }
 
 @media screen and (min-width: 1000px) {
+  .menuContainer{
+    .menuList{
+      .menuItemTitle{
+        font-size: 1.5em;
+        padding-top: 10px;
+      }
+      .menuTitle{
+        color: #FFFD80;
+        font-size: 1.75em;
+      }
+      .menuItem{
+        font-size: 1em;
+        line-height: 90%;
+      }
+    }
+  }
   .orderingContent{
     .box{
       font-size: 20px;
@@ -489,7 +503,7 @@ a{
 
   .paymentContent{
     .creditCardPayment{
-      margin: 10px auto;
+      margin: 10px auto 62px auto;
       width: 70%;
       font-size: 20px;
       form{
@@ -511,4 +525,8 @@ a{
       }
     }
   }
+}
+
+@media screen and (max-width: 1200px) {
+
 }
